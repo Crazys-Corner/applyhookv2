@@ -1,0 +1,86 @@
+.dark-mode {
+
+    background-color: #333 !important; 
+    color: #fff;
+}
+        .light-mode {
+  
+    background-color: #fff;
+    color: #333 !important ;
+}
+
+.bar {
+width: 30px;
+height: 3px;
+background-color: #333;
+margin: 6px 0;
+transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
+.dark-mode .bar {
+    background-color: white;
+}
+
+
+  
+  /* Media query to hide "mobile" class on desktop */
+  @media (min-width: 768px) {
+    .mobile {
+      display: none !important; /* Important to override previous styles */
+    }
+  }
+  
+  /* Media query to hide "desktop" class on mobile */
+  @media (max-width: 767px) {
+    .desktop {
+      display: none !important; /* Important to override previous styles */
+    }
+  }
+  
+/* Styling for the menu icon */
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    margin: 6px 0;
+}
+
+/* Styling for the menu content */
+.menu {
+    display: none;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    margin: 10px 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+/* Media query to make the menu icon responsive */
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu {
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    }
+}
